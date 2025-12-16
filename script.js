@@ -1,8 +1,17 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const verMaisBtn = document.getElementById("verMaisBtn");
-  const colecao = document.getElementById("colecao");
-
-  verMaisBtn.addEventListener("click", () => {
-    colecao.scrollIntoView({ behavior: "smooth" });
+document.querySelectorAll('nav a').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
+    const targetId = this.getAttribute('href').substring(1);
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+    }
   });
+});
+// "Ver mais" button functionality: Scroll to collection
+document.getElementById('verMaisBtn').addEventListener('click', function() {
+  const colecaoSection = document.getElementById('colecao');
+  if (colecaoSection) {
+    colecaoSection.scrollIntoView({ behavior: 'smooth' });
+  }
 });
