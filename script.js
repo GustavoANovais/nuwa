@@ -7,7 +7,7 @@ document.querySelectorAll('nav a').forEach(anchor => {
       targetElement.scrollIntoView({ behavior: 'smooth' });
     }
   });
-});
+})
 // "Ver mais" button functionality: Scroll to collection
 document.getElementById('verMaisBtn').addEventListener('click', function() {
   const colecaoSection = document.getElementById('colecao');
