@@ -1,0 +1,144 @@
+:root {
+  --rosa-escuro: #dbac98;
+  --rosa-claro: #eec1ad;
+  --rosa-escuro: #c98276;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: var(--off-white);
+  color: var(--azul-escuro);
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 3rem;
+  background-color: var(--azul-escuro);
+  color: var(--off-white);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar a {
+  color: var(--off-white);
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+/* Home */
+.home {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--off-white);
+  padding-top: 80px;
+}
+
+.home-content {
+  text-align: center;
+  max-width: 600px;
+}
+
+.home h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.home p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+button {
+  padding: 0.8rem 1.8rem;
+  background-color: var(--azul-escuro);
+  color: var(--off-white);
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: var(--azul-claro);
+}
+
+/* Coleção */
+.colecao {
+  padding: 6rem 3rem;
+  background-color: var(--azul-claro);
+  color: var(--off-white);
+  text-align: center;
+}
+
+.produtos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.produto {
+  background: var(--off-white);
+  color: var(--azul-escuro);
+  border-radius: 12px;
+  padding: 1rem;
+  width: 280px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.produto:hover {
+  transform: scale(1.05);
+}
+
+.produto img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Sobre */
+.sobre {
+  padding: 5rem 3rem;
+  text-align: center;
+  background-color: var(--off-white);
+}
+
+/* Contato */
+.contato {
+  padding: 5rem 3rem;
+  text-align: center;
+  background-color: var(--azul-claro);
+  color: var(--off-white);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--azul-escuro);
+  color: var(--off-white);
+}
