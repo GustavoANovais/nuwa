@@ -62,7 +62,7 @@ body {
          .produtos {
             text-align: center;
             padding: 4em 2em;
-            background-image: url('/products/photos/fundo-ondas.png'); /* Imagem de fundo opcional */
+            background-image: url('/nuwa/products/photos/fundo-ondas.png'); /* Imagem de fundo opcional */
             background-size: cover;
         }
 
@@ -81,3 +81,4 @@ body {
         .produtos a:hover{
             color: var(--extra-color);
         }
+
