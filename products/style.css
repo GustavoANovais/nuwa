@@ -5,7 +5,7 @@
 }
 
 body {
-            background-color: var(--backgrond-color); /* Fundo claro e neutro */
+            background-image: url('/nuwa/products/photos/fundo-ondas.png'); /* Fundo claro e neutro */
             color: var(--background-color-2); /* Cor principal para textos */
             font-family: 'Lexend', sans-serif; /* Fonte padrão */
             margin: 0;
@@ -15,7 +15,7 @@ body {
         }
 
         header {
-            background-color: var(--background-color); /* Fundo do header */
+            background-color: rgba(255, 255, 255, 0.6); /* Fundo do header */
             color: var(--backgrond-color); /* Texto claro para contraste */
             padding: 1em; /* Header maior */
             display: flex;
@@ -82,3 +82,87 @@ body {
             color: var(--extra-color);
         }
 
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            cursor: help;
+        }
+
+        .tooltip-text {
+            visibility: hidden;
+            opacity: 0;
+            width: 250px;
+            background-color: var(--background-color);
+            color: var(--backgrond-color-2);
+            text-align: center;
+            padding: 8px;
+            border-radius: 6px;
+            position: absolute;
+            top: 50%;
+            left: 105%;
+            transform: translateY(-50%);
+            transition: opacity 0.3s;
+            z-index: 10;
+        }
+
+        .tooltip:hover .tooltip-text{
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .tooltip-text::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: -6%;
+            transform: translateY(-50%);
+            border-width: 6px;
+            border-style: solid;
+            border-color: transparent var(--backgrond-color-2) transparent transparent;
+        }
+
+        .back {
+            margin: 0;
+            background-color: var(--background-color);
+            font-family: 'Lexend', sans-serif;
+        }
+
+        .grid-marc {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .marc {
+            background: rgba(13, 27, 42, 0.8);
+            padding: 30px;
+            border-radius: 7px;
+            width: 90%;
+            max-width: 1000px;
+            margin: 15px auto;
+            border: 2px solid rgba(248, 248, 245, 0.6);
+            display: flex;
+            gap: 15px;
+            align-items: flex-start;
+        }
+
+        .marc a {
+            color: var(--background-color);
+            text-decoration: none;
+        }
+
+        .marc img {
+            max-width: 100%;
+            height: auto;
+            width: 100px;
+            border-radius: 10px;
+        }
+
+        footer h2, footer p{
+            background-color: var(--extra-color); /* Fundo do footer */
+            color: #F8F8F5;
+            text-align: center;
+            padding: 2px 0;
+            margin: 0;
+            font-size: 10px;
+        }
