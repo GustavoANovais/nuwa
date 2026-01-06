@@ -5,7 +5,7 @@
 }
 
         body {
-            background-image: url('/products individual/photos/fundo-ondas.png'); /* Fundo claro e neutro */
+            background-image: url('/nuwa/products individual/photos/fundo-ondas.png'); /* Fundo claro e neutro */
             color: var(--background-color-2); /* Cor principal para textos */
             font-family: 'Lexend', sans-serif; /* Fonte padrão */
             margin: 0;
@@ -88,4 +88,5 @@
             font-family: 'IBM Plex Mono', monospace;
             font-size: 24px;
             color: #0D1B2A;
+
         }
