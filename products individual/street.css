@@ -21,7 +21,7 @@
 
         header {
             background-color: rgba(255, 255, 255, 0.6); /* Fundo do header */
-            color: var(--backgrond-color); /* Texto claro para contraste */
+            color: var(--backgrond-color); /* Texto claro para contr */
             padding: 1em; /* Header maior */
             display: flex;
             flex-direction: column;
@@ -123,3 +123,4 @@
             }
 
         }        
+
