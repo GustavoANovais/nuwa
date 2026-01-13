@@ -13,7 +13,7 @@
             flex-direction: column;
             background-image: url('/nuwa/products individual/photos/fundo-ondas.png'); /* Fundo claro e neutro */
             color: var(--background-color-2); /* Cor principal para textos */
-            font-family: 'Lexend', sans-serif; /* Fonte padrão */
+            font-family: 'Lexend', sans-serif; /* Fonte padr */
             margin: 0;
             padding: 0;
             line-height: 1.6;
@@ -122,3 +122,4 @@
             }
 
         }
+
